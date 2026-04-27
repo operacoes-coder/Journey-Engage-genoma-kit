@@ -1,0 +1,11 @@
+{
+  "name": "scraping-tools",
+  "version": "1.0.0",
+  "description": "Skills para scraping web, screenshots e automacao de browser com Playwright",
+  "author": "genoma-kit",
+  "requires": ["playwright"],
+  "commands": [
+    "commands/scrape.md",
+    "commands/screenshot.md"
+  ]
+}

@@ -1,6 +1,6 @@
 # GENOMA — Diagramas
 
-> PGP (Protocolo GENOMA Perpetuo) v2.0
+> PGP (Protocolo GENOMA Perpetuo) v4.0
 
 ## Arquitetura — {{PROJECT_NAME}}
 
@@ -55,3 +55,29 @@ graph LR
 | 6 | Cidade | git show | ~10k | Detalhe de commit |
 | 7 | Edificio | git blame | ~15k | Quem mudou o que |
 | 8 | Atomo | deep/ | ~30k | Investigacao profunda |
+
+## Fluxo GENOMA (ciclo de sessao)
+
+```mermaid
+graph TD
+    START["Inicio Sessao"] --> POP000["POP-000<br/>Diagnostico"]
+    POP000 --> CHECK_TASKS["Verificar Tasks<br/>Pendentes"]
+    CHECK_TASKS --> CHECK_PLANS["Verificar Planos<br/>Ativos"]
+    CHECK_PLANS --> WORK["Trabalho"]
+    WORK --> |"~8 trocas"| POP002["POP-002<br/>Checkpoint"]
+    POP002 --> WORK
+    WORK --> |"erro"| POP003["POP-003<br/>Autocorrecao"]
+    POP003 --> WORK
+    WORK --> |"decisao"| DECISION["Registrar<br/>DECISIONS.md"]
+    DECISION --> WORK
+    WORK --> |"fim"| POP001["POP-001<br/>Save Sessao"]
+    POP001 --> SAVE_HISTORY["Salvar em<br/>history/"]
+    SAVE_HISTORY --> MIGRATE_TASKS["Migrar Tasks<br/>Pendentes"]
+    MIGRATE_TASKS --> UPDATE_SNAP["Atualizar<br/>SNAPSHOT"]
+    UPDATE_SNAP --> COMMIT["Commit<br/>de Sessao"]
+
+    style POP000 fill:#e8f5e9
+    style POP001 fill:#fce4ec
+    style POP002 fill:#fff3e0
+    style POP003 fill:#fce4ec
+```

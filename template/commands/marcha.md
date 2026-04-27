@@ -9,13 +9,18 @@ Pre-aprovacao total concedida para:
 - Consultar APIs externas em modo READ-ONLY
 - Criar/editar arquivos locais
 - Commitar no git
-- Executar POP-000, POP-001, POP-002, POP-003 automaticamente
+- Executar todos os POPs automaticamente
+- Ler/atualizar tasks, plans, history
+- Usar ferramentas configuradas em tools/
+- Criar/atualizar specs e docs
 
 NAO inclui (ainda precisa perguntar):
 - Alterar dados em bancos de producao
 - Ativar/modificar recursos em producao
 - Apagar arquivos
 - Push para repositorios remotos
+- Operacoes que violam invariantes
+- Instalar dependencias globais
 
 Trabalhar autonomamente e entregar resultado pronto.
 Foco atual: $ARGUMENTS

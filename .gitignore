@@ -1,0 +1,33 @@
+# Genoma-Kit — .gitignore
+
+# Credenciais
+.env
+.env.*
+!.env.example
+!.env.template
+*.key
+*.pem
+credentials*
+
+# Claude Code (manter apenas commands/ versionado)
+.claude/*
+!.claude/commands/
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs e temporarios
+*.log
+*.tmp
+.cache/
+
+# Node (se algum plugin usar)
+node_modules/

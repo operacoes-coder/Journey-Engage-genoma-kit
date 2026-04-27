@@ -1,6 +1,6 @@
 # POPs — Indice
 
-> PGP (Protocolo GENOMA Perpetuo) v2.0
+> PGP (Protocolo GENOMA Perpetuo) v4.0
 
 ## Framework (sempre ativos)
 
@@ -22,6 +22,20 @@
 <!-- Adicionar POPs especificos do projeto aqui -->
 <!-- | [POP-P01](POP-P01.md) | Nome | Trigger | Nivel | -->
 
+## O que cada POP verifica (v4.0)
+
+| Recurso | POP-000 | POP-001 | POP-002 | POP-003 |
+|---------|---------|---------|---------|---------|
+| SNAPSHOT.md | Le | Atualiza | Atualiza | Atualiza |
+| MANIFEST.md | Le | — | — | — |
+| tasks/ | Analisa pendentes | Migra pendentes | — | Cria task se recorrente |
+| history/ | Le ultima sessao | Cria registro | — | — |
+| plans/ | Verifica ativos | — | — | — |
+| DECISIONS.md | — | Valida pendentes | — | Registra se relevante |
+| tools/ | Verifica configs | — | — | — |
+| git status | Verifica | Commita | — | — |
+| git log | Le -10 | — | — | Le erros |
+
 ## Niveis de Autonomia
 
 - **Nivel 1:** Propor com tudo preparado, aguardar aprovacao do usuario
@@ -38,5 +52,7 @@ POPs sao executados automaticamente por regras no CLAUDE.md, mas tambem podem se
 | `/pop-002 FULL` | POP-002 | Forcar checkpoint especifico |
 | `/pop-003 descricao` | POP-003 | Pedir investigacao de erro |
 | `/marcha tarefa` | — | Ativar modo autonomo |
+| `/plan titulo` | — | Criar novo plano |
+| `/tasks` | — | Listar tasks pendentes |
 
 Os arquivos dos comandos ficam em `.claude/commands/` e sao gerados pelo `genoma-init.sh`.
