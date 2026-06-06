@@ -1,4 +1,4 @@
-# GENOMA Kit v4.0 — Instalador Definitivo do PGP
+# GENOMA Kit v5.0 — Instalador Definitivo do PGP
 
 > **G**estao **E**struturada **N**ormalizada **O**rientada por **M**etricas e **A**tualizacao
 
@@ -28,6 +28,7 @@ O GENOMA cria um **sistema nervoso** para o projeto:
 | **tools/** | Ferramentas documentadas e pre-configuradas |
 | **POPs** | Automacao de diagnostico, save e correcao |
 | **CLAUDE.md** | 17 blocos de contexto de alta performance |
+| **learnings/** | Aprendizado de sessao (7 campos) + indice LEARNINGS.md (v5) |
 
 ### Beneficios
 
@@ -47,7 +48,7 @@ O GENOMA cria um **sistema nervoso** para o projeto:
 git clone https://github.com/retonalinha-coder/genoma-kit.git
 
 # Instalar no seu projeto
-bash genoma-kit/genoma-init-v4.sh /caminho/do/projeto
+bash genoma-kit/genoma-init-v5.sh /caminho/do/projeto
 ```
 
 O instalador detecta se o projeto ja existe e preenche automaticamente.
@@ -138,6 +139,7 @@ Pergunta framework CSS (Tailwind, Bootstrap, Material, Chakra, etc.) e bibliotec
 ```
 projeto/
 ├── CLAUDE.md                      # Framework 17 blocos de alta performance
+├── LEARNINGS.md                    # Indice de aprendizados — versionado (v5)
 ├── .context/
 │   ├── MANIFEST.md                # DNA do projeto (stack, credenciais, DB)
 │   ├── SNAPSHOT.md                # Estado atual (perpetuo, autocontido)
@@ -161,6 +163,7 @@ projeto/
 │   │   └── POP-P0x.md             # De projeto (DB, testes, deploy)
 │   ├── hooks/                     # Git hooks (commit-msg, etc.)
 │   ├── deep/                      # Investigacoes profundas
+│   ├── learnings/                 # Aprendizados de sessao — 7 campos (v5)
 │   └── templates/                 # Templates reutilizaveis
 ├── specs/
 │   ├── glossary.md                # Linguagem ubiqua
@@ -186,7 +189,9 @@ projeto/
         ├── pop-003.md             # /pop-003 autocorrecao
         ├── marcha.md              # /marcha modo autonomo
         ├── plan.md                # /plan criar/revisar planos
-        └── tasks.md               # /tasks gerenciar tasks
+        ├── tasks.md               # /tasks gerenciar tasks
+        ├── session-learnings.md   # /session-learnings 7 campos (v5)
+        └── create-pop.md          # /create-pop POP de projeto (v5)
 ```
 
 ---
@@ -202,6 +207,8 @@ projeto/
 | `/marcha tarefa` | Modo autonomo — trabalhar sem pedir permissao | Manual |
 | `/plan titulo` | Criar ou revisar plano de implementacao | Manual |
 | `/tasks` | Listar, criar ou gerenciar tasks | Manual |
+| `/session-learnings` | Aprendizado da sessao (7 campos) em `.context/learnings/` + indice `LEARNINGS.md` | Manual |
+| `/create-pop` | Criar POP de projeto (`.context/pops/POP-P0x`) | Manual |
 
 ---
 
@@ -242,7 +249,7 @@ Inicio ──→ POP-000 ──→ Trabalho ──→ POP-001 ──→ Fim
 
 ### 1. Instalador interativo (recomendado)
 ```bash
-bash genoma-kit/genoma-init-v4.sh /meu/projeto
+bash genoma-kit/genoma-init-v5.sh /meu/projeto
 ```
 
 ### 2. Copia manual
@@ -320,6 +327,9 @@ O SNAPSHOT e **autocontido** — a proxima sessao retoma sem ler mais nada.
 | /plan e /tasks commands | — | — | **OK** |
 | CLAUDE.md 17 blocos | — | 15 | **17** |
 | Timestamps reais | — | — | **OK** |
+| Aprendizado de sessao 7 campos (`learnings/`) | — | — | **v5** |
+| `/session-learnings` + `/create-pop` | — | — | **v5** |
+| `LEARNINGS.md` na raiz (indice versionado) | — | — | **v5** |
 
 ---
 
