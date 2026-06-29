@@ -1,6 +1,6 @@
 # sessao-aprendizado-AAAA-MM-DD-HHMM — <título do aprendizado/incidente>
 
-> **Aprendizado de Sessão** — os 7 campos são obrigatórios, nenhum em branco.
+> **Aprendizado de Sessão** — os 9 campos são obrigatórios, nenhum em branco.
 > Date: AAAA-MM-DD HH:MM · Sessão: <id-ou-slug> · Severidade: P0/P1/P2/N-A · Status: resolvido/aberto
 
 ---
@@ -25,6 +25,12 @@
 
 ## 7. Aprendizado
 <A regra destilada, auto-suficiente (1–3 linhas). É ISTO que vai pro índice LEARNINGS.md. Futuro-orientada: o que teria mudado a abordagem de uma sessão anterior.>
+
+## 8. Prevenção
+<O que MUDAR no jeito de trabalhar para isto não voltar — comportamento/processo. Acionável e específico ("sempre setar X em Y"), não genérico ("ter cuidado").>
+
+## 9. Medidas de segurança
+<A BARREIRA AUTOMÁTICA que pega o erro mesmo se a prevenção falhar: teste, assert, lint, hook, CI, default seguro, reset. Diferença do campo 8: prevenção muda o comportamento; segurança age sozinha.>
 
 ---
 

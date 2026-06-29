@@ -1,7 +1,7 @@
 # LEARNINGS
 
 Índice terse das lições deste projeto (versionado → **compartilhado com o time**).
-Uma linha/bloco por aprendizado; o detalhe completo (**7 campos**) mora em
+Uma linha/bloco por aprendizado; o detalhe completo (**9 campos**) mora em
 `.context/learnings/sessao-aprendizado-AAAA-MM-DD-HHMM.md` (local), linkado aqui.
 
 Formato: `Session` → `Date` → `Learnings`. Seções separadas por `==========` (dez iguais).

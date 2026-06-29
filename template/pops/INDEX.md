@@ -35,6 +35,9 @@
 | tools/ | Verifica configs | — | — | — |
 | git status | Verifica | Commita | — | — |
 | git log | Le -10 | — | — | Le erros |
+| LEARNINGS.md + learnings/ | — | Captura (Fase 3.5, rede de seguranca) | — | Captura no momento (apos fix) |
+
+> **Aprendizados** sao capturados via `/session-learnings` (9 campos). **POP-003** captura no momento do erro (mecanismo fresco); **POP-001** (Fase 3.5) e a rede de seguranca no fim da sessao. Campos 8-9 (Prevencao + Medidas de seguranca) sao forward-looking.
 
 ## Niveis de Autonomia
 
