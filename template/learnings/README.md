@@ -1,8 +1,8 @@
 # learnings/ — Aprendizados de Sessão
 
-Um arquivo por aprendizado: `sessao-aprendizado-AAAA-MM-DD-HHMM.md`, com **7 campos**
+Um arquivo por aprendizado: `sessao-aprendizado-AAAA-MM-DD-HHMM.md`, com **9 campos**
 (causa raiz · rotas de identificação · caminho que causou · mecanismo causal ·
-caminho de solução · mecanismo da solução · aprendizado).
+caminho de solução · mecanismo da solução · aprendizado · prevenção · medidas de segurança).
 
 - **Gerado por** `/session-learnings` (template: `sessao-aprendizado-TEMPLATE.md`).
 - **Local** (esta pasta costuma ser gitignored). O que viaja pro time é só a **regra
